@@ -23,6 +23,6 @@ git branch --verbose
 git checkout ${BRANCH_NAME}
 git add -A
 timestamp=$(date -u)
-git commit -m "Update code coverage bash" || exit 0
+git commit -m "Update code coverage badge" || exit 0
 git pull --rebase publisher ${BRANCH_NAME}
 git push publisher ${BRANCH_NAME}
